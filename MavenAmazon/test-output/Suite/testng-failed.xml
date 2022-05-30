@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Chrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="testClasses.VerifyURLusingTestNg">
+        <methods>
+          <include name="verifyURLafterlogin"/>
+          <include name="logingin"/>
+          <include name="closeBrowser"/>
+          <include name="clearobj"/>
+          <include name="loggingout"/>
+          <include name="createPOMobj"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testClasses.VerifyURLusingTestNg -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
